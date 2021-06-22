@@ -13,7 +13,6 @@ $(function () {
   var bootstrapForm = $('.needs-validation'),
     jqForm = $('#jquery-val-form'),
     picker = $('#dob'),
-    dtPicker = $('#dob-bootstrap-val'),
     select = $('.select2');
 
   // select2
@@ -40,17 +39,6 @@ $(function () {
       }
     });
   }
-
-  if (dtPicker.length) {
-    dtPicker.flatpickr({
-      onReady: function (selectedDates, dateStr, instance) {
-        if (instance.isMobile) {
-          $(instance.mobileInput).attr('step', null);
-        }
-      }
-    });
-  }
-
   // Bootstrap Validation
   // --------------------------------------------------------------------
   if (bootstrapForm.length) {

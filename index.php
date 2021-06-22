@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
-<html class="loading bordered-layout" lang="en" data-layout="bordered-layout" data-textdirection="ltr">
+<html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
+
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,7 +13,7 @@
   <meta name="author" content="PIXINVENT">
   <title>Login Page - Vuexy - Bootstrap HTML admin template</title>
   <link rel="apple-touch-icon" href="./app-assets/images/ico/apple-icon-120.html">
-  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/app-assets/images/ico/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
   <!-- BEGIN: Vendor CSS-->
@@ -29,7 +30,7 @@
   <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/semi-dark-layout.min.css">
 
   <!-- BEGIN: Page CSS-->
-  <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.min.css">
+  <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/horizontal-menu.min.css">
   <link rel="stylesheet" type="text/css" href="./app-assets/css/plugins/forms/form-validation.css">
   <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/page-auth.min.css">
   <!-- END: Page CSS-->
@@ -43,7 +44,7 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern blank-page navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="blank-page">
+<body class="horizontal-layout horizontal-menu blank-page navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="blank-page">
   <!-- BEGIN: Content-->
   <div class="app-content content ">
     <div class="content-overlay"></div>
@@ -54,7 +55,7 @@
       <div class="content-body">
         <div class="auth-wrapper auth-v2">
           <div class="auth-inner row m-0">
-            <!-- Brand logo--><a class="brand-logo" href="javascript:void(0);">
+            <!-- Brand logo--><a class="brand-logo" href="#">
               <svg viewBox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="28">
                 <defs>
                   <lineargradient id="linearGradient-1" x1="100%" y1="10.5120544%" x2="50%" y2="89.4879456%">
@@ -78,7 +79,7 @@
                   </g>
                 </g>
               </svg>
-              <h2 class="brand-text text-primary ml-1">Vuexy</h2>
+              <h2 class="brand-text text-primary ms-1">Vuexy</h2>
             </a>
             <!-- /Brand logo-->
             <!-- Left Text-->
@@ -89,29 +90,28 @@
             <!-- Login-->
             <div class="d-flex col-lg-4 align-items-center auth-bg px-2 p-lg-5">
               <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
-                <h2 class="card-title font-weight-bold mb-1">Welcome to Vuexy! 👋</h2>
+                <h2 class="card-title fw-bold mb-1">Welcome to Vuexy! 👋</h2>
                 <p class="card-text mb-2">Please sign-in to your account and start the adventure</p>
                 <form class="auth-login-form mt-2" action="home" method="POST">
-                  <div class="form-group">
+                  <div class="mb-1">
                     <label class="form-label" for="login-email">Email</label>
                     <input class="form-control" id="login-email" type="text" name="login-email" placeholder="john@example.com" aria-describedby="login-email" autofocus="" tabindex="1" />
                   </div>
-                  <div class="form-group">
+                  <div class="mb-1">
                     <div class="d-flex justify-content-between">
-                      <label for="login-password">Password</label><a href="page-auth-forgot-password-v2.html"><small>Forgot Password?</small></a>
+                      <label class="form-label" for="login-password">Password</label><a href="page-auth-forgot-password-v2.html"><small>Forgot Password?</small></a>
                     </div>
                     <div class="input-group input-group-merge form-password-toggle">
-                      <input class="form-control form-control-merge" id="login-password" type="password" name="login-password" placeholder="············" aria-describedby="login-password" tabindex="2" />
-                      <div class="input-group-append"><span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span></div>
+                      <input class="form-control form-control-merge" id="login-password" type="password" name="login-password" placeholder="············" aria-describedby="login-password" tabindex="2" /><span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div class="custom-control custom-checkbox">
-                      <input class="custom-control-input" id="remember-me" type="checkbox" tabindex="3" />
-                      <label class="custom-control-label" for="remember-me"> Remember Me</label>
+                  <div class="mb-1">
+                    <div class="form-check">
+                      <input class="form-check-input" id="remember-me" type="checkbox" tabindex="3" />
+                      <label class="form-check-label" for="remember-me"> Remember Me</label>
                     </div>
                   </div>
-                  <button class="btn btn-primary btn-block" tabindex="4">Sign in</button>
+                  <button class="btn btn-primary w-100" tabindex="4">Sign in</button>
                 </form>
 
               </div>
@@ -130,6 +130,7 @@
   <!-- BEGIN Vendor JS-->
 
   <!-- BEGIN: Page Vendor JS-->
+  <script src="./app-assets/vendors/js/ui/jquery.sticky.js"></script>
   <script src="./app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
   <!-- END: Page Vendor JS-->
 
@@ -153,5 +154,6 @@
     })
   </script>
 </body>
+<!-- END: Body-->
 
 </html>

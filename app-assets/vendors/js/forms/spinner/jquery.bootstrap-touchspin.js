@@ -224,14 +224,14 @@
                       s = c.prev(),
                       p = c.next(),
                       a =
-                        '<span class="input-group-addon input-group-prepend bootstrap-touchspin-prefix input-group-prepend bootstrap-touchspin-injected"><span class="input-group-text">' +
+                        '<span class="input-group-addon bootstrap-touchspin-prefix bootstrap-touchspin-injected"><span class="input-group-text">' +
                         i.prefix +
                         '</span></span>',
                       e =
-                        '<span class="input-group-addon input-group-append bootstrap-touchspin-postfix input-group-append bootstrap-touchspin-injected"><span class="input-group-text">' +
+                        '<span class="input-group-addon bootstrap-touchspin-postfix bootstrap-touchspin-injected"><span class="input-group-text">' +
                         i.postfix +
                         '</span></span>';
-                    s.hasClass('input-group-btn') || s.hasClass('input-group-prepend')
+                    s.hasClass('input-group-btn') || s.hasClass('input-group-text')
                       ? ((n =
                           '<button class="' +
                           i.buttondown_class +
@@ -240,22 +240,22 @@
                           '</button>'),
                         s.append(n))
                       : ((n =
-                          '<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button class="' +
+                          '<span class="input-group-btn bootstrap-touchspin-injected"><button class="' +
                           i.buttondown_class +
                           ' bootstrap-touchspin-down" type="button">' +
                           i.buttondown_txt +
                           '</button></span>'),
                         D(n).insertBefore(c));
-                    p.hasClass('input-group-btn') || p.hasClass('input-group-append')
+                    p.hasClass('input-group-btn') || p.hasClass('input-group-text')
                       ? ((o =
                           '<button class="' +
                           i.buttonup_class +
                           ' bootstrap-touchspin-up bootstrap-touchspin-injected" type="button">' +
                           i.buttonup_txt +
                           '</button>'),
-                        p.prepend(o))
+                        p.text(o))
                       : ((o =
-                          '<span class="input-group-btn input-group-append bootstrap-touchspin-injected"><button class="' +
+                          '<span class="input-group-btn bootstrap-touchspin-injected"><button class="' +
                           i.buttonup_class +
                           ' bootstrap-touchspin-up" type="button">' +
                           i.buttonup_txt +
@@ -271,9 +271,9 @@
                     t = i.verticalbuttons
                       ? '<div class="input-group ' +
                         n +
-                        ' bootstrap-touchspin bootstrap-touchspin-injected"><span class="input-group-addon input-group-prepend bootstrap-touchspin-prefix"><span class="input-group-text">' +
+                        ' bootstrap-touchspin bootstrap-touchspin-injected"><span class="input-group-addon bootstrap-touchspin-prefix"><span class="input-group-text">' +
                         i.prefix +
-                        '</span></span><span class="input-group-addon bootstrap-touchspin-postfix input-group-append"><span class="input-group-text">' +
+                        '</span></span><span class="input-group-addon bootstrap-touchspin-postfix"><span class="input-group-text">' +
                         i.postfix +
                         '</span></span><span class="input-group-btn-vertical"><button class="' +
                         i.buttondown_class +
@@ -288,15 +288,15 @@
                         '" type="button">' +
                         i.verticaldown +
                         '</button></span></div>'
-                      : '<div class="input-group bootstrap-touchspin bootstrap-touchspin-injected"><span class="input-group-btn input-group-prepend"><button class="' +
+                      : '<div class="input-group bootstrap-touchspin bootstrap-touchspin-injected"><span class="input-group-btn"><button class="' +
                         i.buttondown_class +
                         ' bootstrap-touchspin-down" type="button">' +
                         i.buttondown_txt +
-                        '</button></span><span class="input-group-addon bootstrap-touchspin-prefix input-group-prepend"><span class="input-group-text">' +
+                        '</button></span><span class="input-group-addon bootstrap-touchspin-prefix"><span class="input-group-text">' +
                         i.prefix +
-                        '</span></span><span class="input-group-addon bootstrap-touchspin-postfix input-group-append"><span class="input-group-text">' +
+                        '</span></span><span class="input-group-addon bootstrap-touchspin-postfix"><span class="input-group-text">' +
                         i.postfix +
-                        '</span></span><span class="input-group-btn input-group-append"><button class="' +
+                        '</span></span><span class="input-group-btn"><button class="' +
                         i.buttonup_class +
                         ' bootstrap-touchspin-up" type="button">' +
                         i.buttonup_txt +

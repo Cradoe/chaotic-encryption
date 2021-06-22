@@ -94,7 +94,7 @@ $(function () {
     sectionBlockCustom.on('click', function () {
       section.block({
         message:
-          '<div class="d-flex justify-content-center align-items-center"><p class="mr-50 mb-0">Please wait...</p><div class="spinner-grow spinner-grow-sm text-white" role="status"></div>',
+          '<div class="d-flex justify-content-center align-items-center"><p class="me-50 mb-0">Please wait...</p><div class="spinner-grow spinner-grow-sm text-white" role="status"></div>',
         timeout: 1000,
         css: {
           backgroundColor: 'transparent',
@@ -113,7 +113,7 @@ $(function () {
     sectionBlockMultiple.on('click', function () {
       section.block({
         message:
-          '<div class="d-flex justify-content-center align-items-center"><p class="mr-50 mb-0">Please wait...</p> <div class="spinner-grow spinner-grow-sm text-white" role="status"></div>',
+          '<div class="d-flex justify-content-center align-items-center"><p class="me-50 mb-0">Please wait...</p> <div class="spinner-grow spinner-grow-sm text-white" role="status"></div>',
         css: {
           backgroundColor: 'transparent',
           color: '#fff',
@@ -216,7 +216,7 @@ $(function () {
     cardBlockCustom.on('click', function () {
       cardSection.block({
         message:
-          '<div class="d-flex justify-content-center align-items-center"><p class="mr-50 mb-0">Please wait...</p><div class="spinner-grow spinner-grow-sm text-white" role="status"></div> </div>',
+          '<div class="d-flex justify-content-center align-items-center"><p class="me-50 mb-0">Please wait...</p><div class="spinner-grow spinner-grow-sm text-white" role="status"></div> </div>',
         timeout: 1000,
         css: {
           backgroundColor: 'transparent',
@@ -235,7 +235,7 @@ $(function () {
     cardBlockMultiple.on('click', function () {
       cardSection.block({
         message:
-          '<div class="d-flex justify-content-center align-items-center"><p class="mr-50 mb-0">Please wait...</p> <div class="spinner-grow spinner-grow-sm text-white" role="status"></div> </div>',
+          '<div class="d-flex justify-content-center align-items-center"><p class="me-50 mb-0">Please wait...</p> <div class="spinner-grow spinner-grow-sm text-white" role="status"></div> </div>',
         css: {
           backgroundColor: 'transparent',
           color: '#fff',
@@ -337,7 +337,7 @@ $(function () {
     pageBlockCustom.on('click', function () {
       $.blockUI({
         message:
-          '<div class="d-flex justify-content-center align-items-center"><p class="mr-50 mb-0">Please wait...</p> <div class="spinner-grow spinner-grow-sm text-white" role="status"></div> </div>',
+          '<div class="d-flex justify-content-center align-items-center"><p class="me-50 mb-0">Please wait...</p> <div class="spinner-grow spinner-grow-sm text-white" role="status"></div> </div>',
         timeout: 1000,
         css: {
           backgroundColor: 'transparent',
@@ -356,7 +356,7 @@ $(function () {
     pageBlockMultiple.on('click', function () {
       $.blockUI({
         message:
-          '<div class="d-flex justify-content-center align-items-center"><p class="mr-50 mb-0">Please wait...</p> <div class="spinner-grow spinner-grow-sm text-white" role="status"></div> </div>',
+          '<div class="d-flex justify-content-center align-items-center"><p class="me-50 mb-0">Please wait...</p> <div class="spinner-grow spinner-grow-sm text-white" role="status"></div> </div>',
         css: {
           backgroundColor: 'transparent',
           color: '#fff',
@@ -460,7 +460,7 @@ $(function () {
     formBlockCustom.on('click', function () {
       formSection.block({
         message:
-          '<div class="d-flex justify-content-center align-items-center"><p class="mr-50 mb-0">Please wait...</p> <div class="spinner-grow spinner-grow-sm text-white" role="status"></div> </div>',
+          '<div class="d-flex justify-content-center align-items-center"><p class="me-50 mb-0">Please wait...</p> <div class="spinner-grow spinner-grow-sm text-white" role="status"></div> </div>',
         timeout: 1000,
         css: {
           backgroundColor: 'transparent',
@@ -479,7 +479,7 @@ $(function () {
     formBlockMultiple.on('click', function () {
       formSection.block({
         message:
-          '<div class="d-flex justify-content-center align-items-center"><p class="mr-50 mb-0">Please wait...</p> <div class="spinner-grow spinner-grow-sm text-white" role="status"></div> </div>',
+          '<div class="d-flex justify-content-center align-items-center"><p class="me-50 mb-0">Please wait...</p> <div class="spinner-grow spinner-grow-sm text-white" role="status"></div> </div>',
         css: {
           backgroundColor: 'transparent',
           color: '#fff',

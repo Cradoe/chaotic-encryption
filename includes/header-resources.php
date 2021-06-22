@@ -23,7 +23,7 @@
 <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/semi-dark-layout.min.css">
 
 <!-- BEGIN: Page CSS-->
-<link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.min.css">
+<link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/horizontal-menu.min.css">
 <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/app-chat.min.css">
 <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/app-chat-list.min.css">
 <!-- END: Page CSS-->
