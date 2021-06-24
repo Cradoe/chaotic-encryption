@@ -293,7 +293,8 @@
                                 <form class="chat-app-form" action="javascript:void(0);" onsubmit="enterChat();">
                                     <div class="image-preview-area">
                                         <h6>Preview</h6>
-                                        <img src="" class="image-preview" alt="preview">
+                                        <!-- <img src="" class="image-preview" alt="preview"> -->
+                                        <canvas id="canvas"></canvas>
                                     </div>
                                     <div class="input-group input-group-merge me-1 form-send-message">
                                         <span class="speech-to-text input-group-text"><i data-feather="mic" class="mic cursor-pointer"></i></span>
@@ -301,7 +302,7 @@
                                         <span class="input-group-text">
                                             <label for="image-attachment" class="attachment-icon form-label mb-0">
                                                 <i data-feather="image" class="cursor-pointer text-secondary"></i>
-                                                <input type="file" id="image-attachment" accept="image/png" hidden /> </label></span>
+                                                <input type="file" id="image-attachment" accept="image/*" hidden /> </label></span>
                                     </div>
                                     <button type="button" class="btn btn-primary send" onclick="enterChat();">
                                         <i data-feather="send" class="d-lg-none"></i>
@@ -321,10 +322,25 @@
         </div>
     </div>
     <!-- END: Content-->
+
     </div>
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
+    <div>
+        <style>
+            canvas {
+                width: 100%;
+                object-fit: contain;
+            }
 
+            #measure {
+                position: absolute;
+                left: -10000px;
+                top: -100000px;
+            }
+        </style>
+        <div id="measure"></div>
+    </div>
     <!-- BEGIN: Footer-->
     <?php include "includes/footer.php"; ?>
     <!-- END: Footer-->
