@@ -57,7 +57,7 @@
                         </div>
                         <hr class="mb-2" />
                         <div class="d-flex justify-content-center align-items-center">
-                            <form action="">
+                            <form action="file">
                                 <div class="form-group">
                                     <input type="text" class="form-control" />
                                 </div>
