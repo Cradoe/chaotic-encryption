@@ -293,8 +293,8 @@
                                 <form class="chat-app-form" action="javascript:void(0);" onsubmit="enterChat();">
                                     <div class="image-preview-area">
                                         <h6>Preview</h6>
-                                        <!-- <img src="" class="image-preview" alt="preview"> -->
-                                        <canvas id="canvas"></canvas>
+                                        <img src="" class="image-preview" alt="preview">
+                                        <canvas id="canvas" class="d-none"></canvas>
                                     </div>
                                     <div class="input-group input-group-merge me-1 form-send-message">
                                         <span class="speech-to-text input-group-text"><i data-feather="mic" class="mic cursor-pointer"></i></span>
@@ -340,6 +340,7 @@
             }
         </style>
         <div id="measure"></div>
+        <img src="http://127.0.0.1/2021/chaotic-app/app-assets/images/portrait/small/avatar-s-3.jpg" alt="" id="test">
     </div>
     <!-- BEGIN: Footer-->
     <?php include "includes/footer.php"; ?>
