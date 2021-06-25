@@ -60,7 +60,9 @@
     <?php include "includes/footer-resources.php"; ?>
     <script>
         $(function() {
-
+            const imageData = {
+                data;
+            };
             unshuffle(imageData.data);
             reDrawEditedImage(imageData);
 
@@ -81,6 +83,12 @@
 
             function unshuffle(inArr, seed) {
                 shuffle(inArr, seed, true)
+            }
+
+            function reDrawEditedImage(newData) {
+                const reCanvas = $('#reCanvas');
+                var ctxEdited = reCanvas.getContext('2d');
+                ctxEdited.putImageData(newData, 0, 0);
             }
         });
     </script>
