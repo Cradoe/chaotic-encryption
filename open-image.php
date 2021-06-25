@@ -96,7 +96,7 @@
                     $('#resend-button').slideDown();
                 }
             }, 1000);
-        })
+        });
     </script>
 </body>
 <!-- END: Body-->

@@ -38,10 +38,34 @@
     <!-- BEGIN: Content-->
     <div class="app-content content chat-application">
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 m-auto">
-                <div class="card card-profile">
+            <div class="col-md-8 col-12 m-auto">
+                <div class="card card-profile" id="file-pane">
                     <div class="card-body">
+                        <h4>Page Expiring in <span id="counter-text">0</span></h4>
                         <canvas id="canvas"></canvas>
+                    </div>
+                </div>
+                <div id="expired-pane" class="mt-5" style="display: none;">
+                    <div class="card card-profile">
+                        <div class="card-body">
+                            <div class="profile-image-wrapper">
+                                <div class="profile-image">
+                                    <div class="avatar" style="height: 100px;width:100px;">
+                                        <i data-feather='lock'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Image Locked!</h3>
+                            <span class="badge badge-light-primary profile-badge">An OTP has been sent to your email address</span>
+                            <div class="text-center">
+                                <h4 id="counter-text" data-duration="5"></h4>
+                                <a href="resend-otp" id="resend-button" class="btn btn-warning btn-sm" style="display: none;">Resend OTP</a>
+                            </div>
+                            <hr class="mb-2" />
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="open-image" class="btn btn-primary">Unlock File</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,36 +84,20 @@
     <?php include "includes/footer-resources.php"; ?>
     <script>
         $(function() {
-            const imageData = {
-                data;
-            };
-            unshuffle(imageData.data);
-            reDrawEditedImage(imageData);
+            let duration = 5 * 60;
 
-            function shuffle(inArr, seed, unshuffle = false) {
-                let outArr = inArr,
-                    len = inArr.length
-
-                let swap = (a, b) => [outArr[a], outArr[b]] = [outArr[b], outArr[a]]
-
-                for (
-                    var i = unshuffle ? len - 1 : 0; unshuffle && i >= 0 || !unshuffle && i < len; i += unshuffle ? -1 : 1
-                )
-
-                    swap(seed[i % seed.length] % len, i)
-                return new Uint8ClampedArray(outArr);
-
-            }
-
-            function unshuffle(inArr, seed) {
-                shuffle(inArr, seed, true)
-            }
-
-            function reDrawEditedImage(newData) {
-                const reCanvas = $('#reCanvas');
-                var ctxEdited = reCanvas.getContext('2d');
-                ctxEdited.putImageData(newData, 0, 0);
-            }
+            let timer = setInterval(() => {
+                if (duration > 1) {
+                    $('#counter-text').text(`${duration}s`);
+                    duration--;
+                } else {
+                    clearInterval(timer);
+                    $('#file-pane').slideUp('slow', () => {
+                        $('#expired-pane').slideDown();
+                        $('#file-pane').remove();
+                    });
+                }
+            }, 1000);
         });
     </script>
 </body>

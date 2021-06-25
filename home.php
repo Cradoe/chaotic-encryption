@@ -340,7 +340,6 @@
             }
         </style>
         <div id="measure"></div>
-        <img src="http://127.0.0.1/2021/chaotic-app/app-assets/images/portrait/small/avatar-s-3.jpg" alt="" id="test">
     </div>
     <!-- BEGIN: Footer-->
     <?php include "includes/footer.php"; ?>
