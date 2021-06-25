@@ -61,7 +61,28 @@
     <script>
         $(function() {
 
-        })
+            unshuffle(imageData.data);
+            reDrawEditedImage(imageData);
+
+            function shuffle(inArr, seed, unshuffle = false) {
+                let outArr = inArr,
+                    len = inArr.length
+
+                let swap = (a, b) => [outArr[a], outArr[b]] = [outArr[b], outArr[a]]
+
+                for (
+                    var i = unshuffle ? len - 1 : 0; unshuffle && i >= 0 || !unshuffle && i < len; i += unshuffle ? -1 : 1
+                )
+
+                    swap(seed[i % seed.length] % len, i)
+                return new Uint8ClampedArray(outArr);
+
+            }
+
+            function unshuffle(inArr, seed) {
+                shuffle(inArr, seed, true)
+            }
+        });
     </script>
 </body>
 <!-- END: Body-->
