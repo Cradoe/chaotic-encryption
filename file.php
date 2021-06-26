@@ -84,20 +84,54 @@
     <?php include "includes/footer-resources.php"; ?>
     <script>
         $(function() {
-            let duration = 5 * 60;
+            function pageTimer() {
+                let duration = 5 * 60;
 
-            let timer = setInterval(() => {
-                if (duration > 1) {
-                    $('#counter-text').text(`${duration}s`);
-                    duration--;
-                } else {
-                    clearInterval(timer);
-                    $('#file-pane').slideUp('slow', () => {
-                        $('#expired-pane').slideDown();
-                        $('#file-pane').remove();
-                    });
+                let timer = setInterval(() => {
+                    if (duration > 1) {
+                        $('#counter-text').text(`${duration}s`);
+                        duration--;
+                    } else {
+                        clearInterval(timer);
+                        $('#file-pane').slideUp('slow', () => {
+                            $('#expired-pane').slideDown();
+                            $('#file-pane').remove();
+                        });
+                    }
+                }, 1000);
+            }
+
+            function decriptImage(callback = {}) {
+
+
+                var settings = {
+                    "url": "http://127.0.0.1:3000/api/encrypt",
+                    "method": "GET",
+                    "timeout": 0,
+                    "processData": false,
+                    "mimeType": "multipart/form-data",
+                    "contentType": false,
+                    success: (response) => {
+
+                        if (response.status_code == 200) {
+                            $('#loader, #page-content').slideToggle();
+                        } else {
+                            $('#loader, #connection-error').slideToggle();
+                        }
+                    },
+                    error: function(error) {
+                        console.log("error", error);
+                        $('#loader, #connection-error').slideToggle();
+                    }
+                };
+
+                try {
+                    $.ajax(settings);
+                } catch (error) {
+                    callback.error(error);
                 }
-            }, 1000);
+
+            }
         });
     </script>
 </body>

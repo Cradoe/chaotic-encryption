@@ -34,8 +34,9 @@
         <div class="bookmark-wrapper d-flex align-items-center">
 
             <ul class="nav navbar-nav bookmark-icons">
-                <li class="nav-item d-none d-lg-block">
-                    <h3>MISSION CODE: 023jns</h3>
+                <li class="nav-item d-lg-block">
+                    <a href="chat" class="btn btn-primary btn-sm">Chat Room
+                    </a>
                 </li>
             </ul>
         </div>
