@@ -80,7 +80,7 @@
             <!-- Orders Chart Card ends -->
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div class="card">
                     <div class="card-header">
                         <h4 class="card-title">Ongoing Missions</h4>
@@ -113,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div class="card">
                     <div class="card-header">
                         <h4 class="card-title">Completed Missions</h4>

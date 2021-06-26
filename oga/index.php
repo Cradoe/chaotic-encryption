@@ -92,7 +92,7 @@
               <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
                 <h2 class="card-title fw-bold mb-1">Welcome to Vuexy! 👋</h2>
                 <p class="card-text mb-2">Please sign-in to your account and start the adventure</p>
-                <form class="auth-login-form mt-2" action="home" method="POST">
+                <form class="auth-login-form mt-2" action="dashboard" method="POST">
                   <div class="mb-1">
                     <label class="form-label" for="login-email">Email</label>
                     <input class="form-control" id="login-email" type="text" name="login-email" placeholder="john@example.com" aria-describedby="login-email" autofocus="" tabindex="1" />
