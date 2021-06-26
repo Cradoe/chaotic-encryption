@@ -38,7 +38,7 @@
     <!-- BEGIN: Content-->
     <div class="app-content content chat-application">
         <div class="row">
-            <div class="col-md-8 col-12 m-auto">
+            <div class="col-md-8 col-12 m-auto" id="page-content" style="display: none;">
                 <div class="card card-profile" id="file-pane">
                     <div class="card-body">
                         <h4>Page Expiring in <span id="counter-text">0</span></h4>
@@ -55,8 +55,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <h3>Image Locked!</h3>
-                            <span class="badge badge-light-primary profile-badge">An OTP has been sent to your email address</span>
+                            <h3>File Locked!</h3>
+                            <span class="badge badge-light-primary profile-badge">An OTP will be sent to your email address</span>
                             <div class="text-center">
                                 <h4 id="counter-text" data-duration="5"></h4>
                                 <a href="resend-otp" id="resend-button" class="btn btn-warning btn-sm" style="display: none;">Resend OTP</a>
@@ -66,6 +66,20 @@
                                 <a href="open-image" class="btn btn-primary">Unlock File</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-12 m-auto" id="loader">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-info text-center">Please wait... Connecting to API server</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-12 m-auto" id="connection-error" style="display: none;">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-danger text-center">Opps! Unable to connect to the server. Please try again later.</h2>
                     </div>
                 </div>
             </div>
@@ -84,6 +98,8 @@
     <?php include "includes/footer-resources.php"; ?>
     <script>
         $(function() {
+            decriptImage();
+
             function pageTimer() {
                 let duration = 5 * 60;
 
@@ -101,13 +117,14 @@
                 }, 1000);
             }
 
-            function decriptImage(callback = {}) {
+            function decriptImage() {
 
 
                 var settings = {
-                    "url": "http://127.0.0.1:3000/api/encrypt",
+                    "url": "http://127.0.0.1:3000/api/decrypt",
                     "method": "GET",
                     "timeout": 0,
+                    "dataType": "json",
                     "processData": false,
                     "mimeType": "multipart/form-data",
                     "contentType": false,
@@ -115,6 +132,7 @@
 
                         if (response.status_code == 200) {
                             $('#loader, #page-content').slideToggle();
+                            pageTimer();
                         } else {
                             $('#loader, #connection-error').slideToggle();
                         }
