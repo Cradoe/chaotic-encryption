@@ -64,11 +64,6 @@
     <!-- END: Footer-->
 
     <?php include "includes/footer-resources.php"; ?>
-    <script src="../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-    <script src="../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
-    <script src="../app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
-    <script src="../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-    <script src="../app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
 
 
 </body>

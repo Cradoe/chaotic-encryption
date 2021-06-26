@@ -27,21 +27,30 @@
             <div class="col-md-8 m-auto col-12" id="member-table">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">New Oga</h4>
+                        <h4 class="card-title">New Mission</h4>
+
+                        <a href="new-team" class="btn btn-primary btn-sm">Register New Team</a>
                     </div>
                     <div class="card-body">
                         <form action="" method="post">
                             <div class="form-group">
-                                <label for="">Agent Code</label>
-                                <input type="text" name="agent-code" id="" class="form-control" />
+                                <label for="">Mission Code</label>
+                                <input type="text" name="code-code" id="" class="form-control" />
                             </div>
                             <div class="form-group mt-2">
-                                <label for="">Agent Name</label>
-                                <input type="text" name="fullname" id="" class="form-control" />
+                                <label for="">Start Date</label>
+                                <input type="date" name="start-date" id="" class="form-control" />
                             </div>
                             <div class="form-group mt-2">
-                                <label for="">Profile Picture</label>
-                                <input type="file" name="team-member" id="" class="form-control" />
+                                <label for="">Team</label>
+                                <select name="team" id="" class="form-control">
+                                    <option value="" selected disabled>Select</option>
+                                    <option value="">Team 02933</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-2">
+                                <label for="">Description</label>
+                                <textarea name="" id="" class="form-control" style="resize: none;"></textarea>
                             </div>
                             <div class="form-group mt-2 text-center">
                                 <button class="btn btn-primary">Submit</button>
@@ -64,12 +73,6 @@
     <!-- END: Footer-->
 
     <?php include "includes/footer-resources.php"; ?>
-    <script src="../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-    <script src="../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
-    <script src="../app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
-    <script src="../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-    <script src="../app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
-
 
 </body>
 <!-- END: Body-->
