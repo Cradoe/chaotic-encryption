@@ -27,26 +27,21 @@
             <div class="col-md-8 m-auto col-12" id="member-table">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">New Team</h4>
-
-                        <a href="new-oga" class="btn btn-primary btn-sm">Register New Oga</a>
+                        <h4 class="card-title">New Oga</h4>
                     </div>
                     <div class="card-body">
                         <form action="" method="post">
                             <div class="form-group">
-                                <label for="">Team Code</label>
-                                <input type="text" name="team-code" id="" class="form-control" />
+                                <label for="">Agent Code</label>
+                                <input type="text" name="agent-code" id="" class="form-control" />
                             </div>
                             <div class="form-group mt-2">
-                                <label for="">Team Member <span class="badge badge-info">Upload CSV file</span></label>
+                                <label for="">Agent Name</label>
+                                <input type="text" name="fullname" id="" class="form-control" />
+                            </div>
+                            <div class="form-group mt-2">
+                                <label for="">Profile Picture</label>
                                 <input type="file" name="team-member" id="" class="form-control" />
-                            </div>
-                            <div class="form-group mt-2">
-                                <label for="">Oga</label>
-                                <select name="oga" id="" class="form-control">
-                                    <option value="" selected disabled>Select</option>
-                                    <option value="">Adewale (03203)</option>
-                                </select>
                             </div>
                             <div class="form-group mt-2 text-center">
                                 <button class="btn btn-primary">Submit</button>

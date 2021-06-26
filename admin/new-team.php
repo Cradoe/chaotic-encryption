@@ -38,7 +38,7 @@
                                 <input type="text" name="team-code" id="" class="form-control" />
                             </div>
                             <div class="form-group mt-2">
-                                <label for="">Team Member <span class="badge badge-info">Upload CSV file</span></label>
+                                <label for="">Team Member <small class="badge badge-warning bg-warning">Upload CSV file</small></label>
                                 <input type="file" name="team-member" id="" class="form-control" />
                             </div>
                             <div class="form-group mt-2">
