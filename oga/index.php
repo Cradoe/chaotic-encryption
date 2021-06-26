@@ -139,9 +139,6 @@
   <script src="../app-assets/js/core/app.min.js"></script>
   <!-- END: Theme JS-->
 
-  <!-- BEGIN: Page JS-->
-  <script src="../app-assets/js/scripts/pages/page-auth-login.js"></script>
-  <!-- END: Page JS-->
 
   <script>
     $(window).on('load', function() {
