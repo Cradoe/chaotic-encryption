@@ -40,7 +40,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-12 m-auto">
                 <div class="card card-profile">
-                    <img src="./app-assets/images/banner/banner-12.jpg" class="img-fluid card-img-top" alt="Profile Cover Photo" />
+                    <div class="bg-black" style="height:100px;"></div>
                     <div class="card-body">
                         <div class="profile-image-wrapper">
                             <div class="profile-image">

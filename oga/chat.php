@@ -36,7 +36,7 @@
                             <!-- User Information -->
                             <div class="header-profile-sidebar">
                                 <div class="avatar box-shadow-1 avatar-xl avatar-border">
-                                    <img src="./app-assets/images/portrait/small/avatar-s-11.jpg" alt="user_avatar" />
+                                    <img src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="user_avatar" />
                                     <span class="avatar-status-online avatar-status-xl"></span>
                                 </div>
                                 <h4 class="chat-user-name">Ismai Obadimu</h4>
@@ -73,7 +73,7 @@
                             <div class="d-flex align-items-center w-100">
                                 <div class="sidebar-profile-toggle">
                                     <div class="avatar avatar-border">
-                                        <img src="./app-assets/images/portrait/small/avatar-s-11.jpg" alt="user_avatar" height="42" width="42" />
+                                        <img src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="user_avatar" height="42" width="42" />
                                         <span class="avatar-status-online"></span>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@
                             <h4 class="chat-list-title">Chats</h4>
                             <ul class="chat-users-list chat-list media-list">
                                 <li data-user="43">
-                                    <span class="avatar"><img src="./app-assets/images/portrait/small/avatar-s-3.jpg" height="42" width="42" alt="Generic placeholder image" />
+                                    <span class="avatar"><img src="../app-assets/images/portrait/small/avatar-s-3.jpg" height="42" width="42" alt="Generic placeholder image" />
                                         <span class="avatar-status-online"></span>
                                     </span>
                                     <div class="chat-info flex-grow-1">
@@ -105,7 +105,7 @@
                                     </div>
                                 </li>
                                 <li data-user="43">
-                                    <span class="avatar"><img src="./app-assets/images/portrait/small/avatar-s-7.jpg" height="42" width="42" alt="Generic placeholder image" />
+                                    <span class="avatar"><img src="../app-assets/images/portrait/small/avatar-s-7.jpg" height="42" width="42" alt="Generic placeholder image" />
                                         <span class="avatar-status-online"></span>
                                     </span>
                                     <div class="chat-info flex-grow-1">
@@ -119,7 +119,7 @@
                                     </div>
                                 </li>
                                 <li data-user="43">
-                                    <span class="avatar"><img src="./app-assets/images/portrait/small/avatar-s-8.jpg" height="42" width="42" alt="Generic placeholder image" />
+                                    <span class="avatar"><img src="../app-assets/images/portrait/small/avatar-s-8.jpg" height="42" width="42" alt="Generic placeholder image" />
                                         <span class="avatar-status-online"></span>
                                     </span>
                                     <div class="chat-info flex-grow-1">
@@ -133,7 +133,7 @@
                                     </div>
                                 </li>
                                 <li data-user="43">
-                                    <span class="avatar"><img src="./app-assets/images/portrait/small/avatar-s-3.jpg" height="42" width="42" alt="Generic placeholder image" />
+                                    <span class="avatar"><img src="../app-assets/images/portrait/small/avatar-s-3.jpg" height="42" width="42" alt="Generic placeholder image" />
                                         <span class="avatar-status-online"></span>
                                     </span>
                                     <div class="chat-info flex-grow-1">
@@ -148,7 +148,7 @@
                                     </div>
                                 </li>
                                 <li data-user="43">
-                                    <span class="avatar"><img src="./app-assets/images/portrait/small/avatar-s-7.jpg" height="42" width="42" alt="Generic placeholder image" />
+                                    <span class="avatar"><img src="../app-assets/images/portrait/small/avatar-s-7.jpg" height="42" width="42" alt="Generic placeholder image" />
                                         <span class="avatar-status-online"></span>
                                     </span>
                                     <div class="chat-info flex-grow-1">
@@ -162,7 +162,7 @@
                                     </div>
                                 </li>
                                 <li data-user="43">
-                                    <span class="avatar"><img src="./app-assets/images/portrait/small/avatar-s-8.jpg" height="42" width="42" alt="Generic placeholder image" />
+                                    <span class="avatar"><img src="../app-assets/images/portrait/small/avatar-s-8.jpg" height="42" width="42" alt="Generic placeholder image" />
                                         <span class="avatar-status-online"></span>
                                     </span>
                                     <div class="chat-info flex-grow-1">
@@ -176,7 +176,7 @@
                                     </div>
                                 </li>
                                 <li data-user="43">
-                                    <span class="avatar"><img src="./app-assets/images/portrait/small/avatar-s-3.jpg" height="42" width="42" alt="Generic placeholder image" />
+                                    <span class="avatar"><img src="../app-assets/images/portrait/small/avatar-s-3.jpg" height="42" width="42" alt="Generic placeholder image" />
                                         <span class="avatar-status-online"></span>
                                     </span>
                                     <div class="chat-info flex-grow-1">
@@ -191,7 +191,7 @@
                                     </div>
                                 </li>
                                 <li data-user="43">
-                                    <span class="avatar"><img src="./app-assets/images/portrait/small/avatar-s-7.jpg" height="42" width="42" alt="Generic placeholder image" />
+                                    <span class="avatar"><img src="../app-assets/images/portrait/small/avatar-s-7.jpg" height="42" width="42" alt="Generic placeholder image" />
                                         <span class="avatar-status-online"></span>
                                     </span>
                                     <div class="chat-info flex-grow-1">
@@ -205,7 +205,7 @@
                                     </div>
                                 </li>
                                 <li data-user="43">
-                                    <span class="avatar"><img src="./app-assets/images/portrait/small/avatar-s-8.jpg" height="42" width="42" alt="Generic placeholder image" />
+                                    <span class="avatar"><img src="../app-assets/images/portrait/small/avatar-s-8.jpg" height="42" width="42" alt="Generic placeholder image" />
                                         <span class="avatar-status-online"></span>
                                     </span>
                                     <div class="chat-info flex-grow-1">
@@ -256,7 +256,7 @@
                                                 <i data-feather="menu" class="font-medium-5"></i>
                                             </div>
                                             <div class="avatar avatar-border user-profile-toggle m-0 me-1">
-                                                <img src="./app-assets/images/portrait/small/avatar-s-7.jpg" alt="avatar" height="36" width="36" />
+                                                <img src="../app-assets/images/portrait/small/avatar-s-7.jpg" alt="avatar" height="36" width="36" />
                                                 <span class="avatar-status-busy"></span>
                                             </div>
                                             <h6 class="mb-0">Kristopher Candy</h6>

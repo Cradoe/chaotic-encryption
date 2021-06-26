@@ -29,7 +29,7 @@
                     <div class="card-header">
                         <h4 class="card-title">Team Members</h4>
 
-                        <button class="btn btn-primary btn-sm" id="change-captain">Change Captain</button>
+                        <button class="btn btn-primary btn-sm">Captain: 000kji98888</button>
                     </div>
                     <div class="card-body table-responsive">
                         <table class="datatable">
@@ -210,22 +210,7 @@
             <!--/ Employee Task Card -->
 
 
-            <div class="col-md-6 m-auto" id="captain-form" style="display: none;">
-                <div class="card">
-                    <div class="card-body">
-                        <form action="">
-                            <div class="form-group">
-                                <label for="">Agent Code</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group mt-3">
-                                <button class="btn btn-primary">Submit</button>
-                                <button class="btn btn-warning" type="reset" id="cancel-form">Cancel</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     <!-- END: Content-->
@@ -248,11 +233,7 @@
         $(function() {
             $('.datatable').DataTable();
 
-            $('#change-captain, #cancel-form').click(function(e) {
-                e.preventDefault();
 
-                $('#member-table, #captain-form').slideToggle();
-            })
         })
     </script>
 
