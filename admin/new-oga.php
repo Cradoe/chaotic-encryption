@@ -40,6 +40,10 @@
                                 <input type="text" name="fullname" id="" class="form-control" />
                             </div>
                             <div class="form-group mt-2">
+                                <label for="">Email Address</label>
+                                <input type="email" name="email" id="" class="form-control" />
+                            </div>
+                            <div class="form-group mt-2">
                                 <label for="">Profile Picture</label>
                                 <input type="file" name="team-member" id="" class="form-control" />
                             </div>
