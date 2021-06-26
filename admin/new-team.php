@@ -74,17 +74,7 @@
     <script src="../app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
     <script src="../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
     <script src="../app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
-    <script>
-        $(function() {
-            $('.datatable').DataTable();
 
-            $('#close-mission').click(function(e) {
-                if (confirm("Are you sure you want to perform this action? This will close the mission.") == false) {
-                    e.preventDefault();
-                }
-            });
-        })
-    </script>
 
 </body>
 <!-- END: Body-->
