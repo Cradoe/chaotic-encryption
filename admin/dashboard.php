@@ -43,17 +43,19 @@
 
 
             <div class="col-lg-3 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-header flex-column align-items-start ">
-                        <div class="avatar bg-light-primary p-50 m-0">
-                            <div class="avatar-content">
-                                <i data-feather="users" class="font-medium-5"></i>
+                <a href="teams">
+                    <div class="card">
+                        <div class="card-header flex-column align-items-start ">
+                            <div class="avatar bg-light-primary p-50 m-0">
+                                <div class="avatar-content">
+                                    <i data-feather="users" class="font-medium-5"></i>
+                                </div>
                             </div>
+                            <h2 class="fw-bolder mt-1">92.6k</h2>
+                            <p class="card-text">Teams</p>
                         </div>
-                        <h2 class="fw-bolder mt-1">92.6k</h2>
-                        <p class="card-text">Soldiers</p>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="col-lg-3 col-sm-6 col-12">

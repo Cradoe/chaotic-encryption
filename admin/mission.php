@@ -24,12 +24,24 @@
     <div class="app-content content chat-application">
         <div class="row match-height">
             <!-- Employee Task Card -->
-            <div class="col-lg-12 col-md-12 col-12" id="member-table">
+            <div class="col-md-4 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">MISSION: 029399</h2>
+                    </div>
+                    <div class="card-body">
+                        <p><b>Description</b>: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia consequatur odio dolore eveniet nemo at? Dolore sed maxime cupiditate atque saepe tenetur, ducimus provident accusantium autem accusamus deserunt eos fuga.</p>
+                        <p><b>Oga</b>: Adewale Abati</p>
+                        <p><b>Captain</b>: Adewale Abati</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-12" id="member-table">
                 <div class="card card-employee-task">
                     <div class="card-header">
                         <h4 class="card-title">Team Members</h4>
 
-                        <button class="btn btn-primary btn-sm" id="change-captain">Change Captain</button>
+                        <a href="mission" class="btn btn-danger btn-sm" id="close-mission">Close Mission</a>
                     </div>
                     <div class="card-body table-responsive">
                         <table class="datatable">
@@ -207,25 +219,7 @@
                     </div>
                 </div>
             </div>
-            <!--/ Employee Task Card -->
 
-
-            <div class="col-md-6 m-auto" id="captain-form" style="display: none;">
-                <div class="card">
-                    <div class="card-body">
-                        <form action="">
-                            <div class="form-group">
-                                <label for="">Agent Code</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group mt-3">
-                                <button class="btn btn-primary">Submit</button>
-                                <button class="btn btn-warning" type="reset" id="cancel-form">Cancel</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- END: Content-->
@@ -248,11 +242,11 @@
         $(function() {
             $('.datatable').DataTable();
 
-            $('#change-captain, #cancel-form').click(function(e) {
-                e.preventDefault();
-
-                $('#member-table, #captain-form').slideToggle();
-            })
+            $('#close-mission').click(function(e) {
+                if (confirm("Are you sure you want to perform this action? This will close the mission.") == false) {
+                    e.preventDefault();
+                }
+            });
         })
     </script>
 

@@ -24,12 +24,25 @@
     <div class="app-content content chat-application">
         <div class="row match-height">
             <!-- Employee Task Card -->
-            <div class="col-lg-12 col-md-12 col-12" id="member-table">
+            <div class="col-md-4 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">MISSION: 029399</h2>
+                    </div>
+                    <div class="card-body">
+                        <p><b>Description</b>: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia consequatur odio dolore eveniet nemo at? Dolore sed maxime cupiditate atque saepe tenetur, ducimus provident accusantium autem accusamus deserunt eos fuga.</p>
+                        <p><b>Oga</b>: Adewale Abati</p>
+                        <p><b>Captain</b>: Adewale Abati</p>
+                        <p><b>Date Closed</b>: 20/02/2032</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-12" id="member-table">
                 <div class="card card-employee-task">
                     <div class="card-header">
                         <h4 class="card-title">Team Members</h4>
 
-                        <button class="btn btn-primary btn-sm">Captain: 000kji98888</button>
+                        <a href="mission" class="btn btn-danger btn-sm" id="open-mission">Re-Open Mission</a>
                     </div>
                     <div class="card-body table-responsive">
                         <table class="datatable">
@@ -207,9 +220,6 @@
                     </div>
                 </div>
             </div>
-            <!--/ Employee Task Card -->
-
-
 
         </div>
     </div>
@@ -233,7 +243,11 @@
         $(function() {
             $('.datatable').DataTable();
 
-
+            $('#open-mission').click(function(e) {
+                if (confirm("Are you sure you want to perform this action? This will open the mission.") == false) {
+                    e.preventDefault();
+                }
+            });
         })
     </script>
 
